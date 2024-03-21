@@ -1,0 +1,14 @@
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background-color: #ffff;
+  border-radius: 20px;
+}
+
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
