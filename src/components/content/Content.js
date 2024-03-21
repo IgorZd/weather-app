@@ -2,9 +2,9 @@ import "./Content.css";
 import { Card } from "../card/Card";
 import { Loader } from "../loader/Loader";
 
-export const Content = ({ cityName, data, isSearchInProgress }) => {
+export const Content = ({ data, isSearchInProgress }) => {
   const { cityData, weatherData, icon_url } = data || {};
-  const title = `The weather in ${cityName}`;
+  const title = `The weather in ${cityData[1].value}`;
   const noResults = "No results, try again please";
   const cards = [cityData, weatherData];
 

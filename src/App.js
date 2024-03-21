@@ -28,11 +28,7 @@ function App() {
         onChangeSearchInput={onChangeSearchInput}
         onClickSearchButton={onClickSearchButton}
       />
-      <Content
-        cityName={"Jerusalem"}
-        data={weatherData}
-        isSearchInProgress={isSearchInProgress}
-      />
+      <Content data={weatherData} isSearchInProgress={isSearchInProgress} />
     </div>
   );
 }
