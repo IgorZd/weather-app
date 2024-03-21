@@ -4,7 +4,7 @@ import { Loader } from "../loader/Loader";
 
 export const Content = ({ data, isSearchInProgress }) => {
   const { cityData, weatherData, icon_url } = data || {};
-  const title = `The weather in ${cityData ? cityData[1]?.value : ""}`;
+  const title = cityData ? `The weather in ${cityData[1]?.value}` : "";
   const noResults = "No results, try again please";
   const cards = [cityData, weatherData];
 
